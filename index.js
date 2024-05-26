@@ -15,3 +15,6 @@ function ToSignIn(){
     window.location.href="SignIn.html"
 
 }
+function ToContactUs(){
+    window.location.href="ContactUs.html"
+}
