@@ -1,14 +1,19 @@
+// const email = document.getElementsByName('Email')[0].value;
+// window.alert(email);    
+OTPverify();
+
 function OTPverify() {
     const email = document.getElementsByName('Email')[0].value; // Get the email value
+    // alert(email);
     const otpInput = document.getElementsByClassName('input-field')[0];
     
     let otp_val = Math.floor(Math.random() * 10000);
     let emailbody = `<h3>Your OTP value is ${otp_val}</h3>`;
 
     Email.send({
-        SecureToken: "d4d8de78-9708-422e-b736-5846d9006823",
-        To: email,
-        From: "dewminkasmitha30@gmail.com",
+        SecureToken: "5b4b6298-68aa-4555-b043-f69c55e1776b",
+        To: email.value,
+        From: "aparaelpitiya@gmail.com",
         Subject: "Email Verification",
         Body: emailbody
     }).then(message => {
